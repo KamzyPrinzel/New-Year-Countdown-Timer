@@ -1,0 +1,23 @@
+---
+- name: Install Nginx
+  apt:
+    name: nginx
+    state: present
+
+- name: Start and enable Nginx
+  service:
+    name: nginx
+    state: started
+    enabled: true
+
+- name: Install Node.js (via NodeSource)
+  shell: |
+    curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+  args:
+    executable: /bin/bash
+
+- name: Install Node.js and npm
+  apt:
+    name:
+      - nodejs
+    state: present

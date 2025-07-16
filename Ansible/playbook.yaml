@@ -1,0 +1,9 @@
+---
+- name: set up nyct-server
+  hosts: nyct-server
+  become: true
+
+  roles:
+    - common
+    - docker
+    - webserver
