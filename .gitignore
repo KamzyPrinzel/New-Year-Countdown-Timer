@@ -1,1 +1,44 @@
+# === Terraform ===
 .terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars
+*.tfvars.json
+*.backup
+
+# Sensitive files (SSH keys, certs)
+*.pem
+*.key
+*.crt
+
+# === Node.js ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*
+
+# === Ansible ===
+*.retry
+inventory.ini
+ansible.cfg
+
+# === System ===
+.DS_Store
+Thumbs.db
+
+# === Logs and misc ===
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# === VSCode & IDEs ===
+.vscode/
+.idea/
+*.code-workspace
