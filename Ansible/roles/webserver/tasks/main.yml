@@ -21,3 +21,9 @@
     name:
       - nodejs
     state: present
+
+- name: Clone static repo
+  git:
+    repo: https://github.com/KamzyPrinzel/New-Year-Countdown-Timer.git
+    dest: /var/www/html
+    version: main
