@@ -36,4 +36,3 @@ post {
       echo '❌ Deployment failed.'
     }
   }
-}
