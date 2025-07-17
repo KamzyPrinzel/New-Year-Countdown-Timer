@@ -17,7 +17,7 @@ pipeline {
         dir('Ansible') {
           withCredentials([sshUserPrivateKey(credentialsId: 'ansible-ssh-key', keyFileVariable: 'SSH_KEY')]) {
             sh '''
-              ansible-playbook -i inventory.ini playbook.yml \
+              ansible-playbook -i inventory.yaml playbook.yaml \
               --private-key=$SSH_KEY
             '''
           }
