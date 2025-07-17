@@ -27,7 +27,8 @@ pipeline {
   }
 }
 
-  post {
+
+post {
     success {
       echo '✅ App deployed successfully!'
     }
