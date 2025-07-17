@@ -28,11 +28,4 @@ pipeline {
 }
 
 
-post {
-    success {
-      echo '✅ App deployed successfully!'
-    }
-    failure {
-      echo '❌ Deployment failed.'
-    }
-  }
+
